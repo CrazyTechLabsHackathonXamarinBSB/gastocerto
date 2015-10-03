@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GastoCerto.Core.Modelo
 {
-    public class Saldo
+    public class PrevisaoGasto
     {
         public DateTime data { get; set; }
         public decimal saldo { get; set; }
