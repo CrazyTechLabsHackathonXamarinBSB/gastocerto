@@ -3,6 +3,7 @@ using GastoCerto.Core.Modelo;
 using MvvmCross.Plugins.Sqlite;
 using SQLite.Net.Async;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace GastoCerto.Core.Repositorio
 {
@@ -29,12 +30,10 @@ namespace GastoCerto.Core.Repositorio
         }
 
 
-        //public async AsyncTableQuery<PrevisaoGasto> Consulta()
-        //{
-        //    var p = _connection.Table<PrevisaoGasto>();
-        //    return await p.ToListAsync();
-        //}
-
-
+        public async Task<List<PrevisaoGasto>> Consulta()
+        {
+            var p = _connection.Table<PrevisaoGasto>();
+            return await p.ToListAsync();
+        }
     }
 }
