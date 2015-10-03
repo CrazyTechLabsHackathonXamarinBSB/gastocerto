@@ -67,6 +67,7 @@ namespace GastoCerto.WinPhone
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+            RootFrame.Navigating += RootFrameOnNavigating;
         }
 
         // Code to execute when the application is activated (brought to foreground)
@@ -121,6 +122,8 @@ namespace GastoCerto.WinPhone
             // Create the frame but don't set it as RootVisual yet; this allows the splash
             // screen to remain active until the application is ready to render.
             RootFrame = new PhoneApplicationFrame();
+            var setup = new Setup(RootFrame);
+            setup.Initialize();
             RootFrame.Navigated += CompleteInitializePhoneApplication;
 
             // Handle navigation failures
@@ -227,6 +230,13 @@ namespace GastoCerto.WinPhone
 
                 throw;
             }
+        }
+
+        private void RootFrameOnNavigating(object sender, NavigatingCancelEventArgs args)
+        {
+            args.Cancel = true;
+            RootFrame.Navigating -= RootFrameOnNavigating;
+            RootFrame.Dispatcher.BeginInvoke(() => { Cirrious.CrossCore.Mvx.Resolve<Cirrious.MvvmCross.ViewModels.IMvxAppStart>().Start(); });
         }
     }
 }
