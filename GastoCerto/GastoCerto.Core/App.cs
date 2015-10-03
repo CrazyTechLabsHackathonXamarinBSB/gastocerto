@@ -1,4 +1,6 @@
+using Cirrious.CrossCore;
 using Cirrious.CrossCore.IoC;
+using GastoCerto.Core.Repositorio;
 
 namespace GastoCerto.Core
 {
@@ -11,7 +13,7 @@ namespace GastoCerto.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 				
-            RegisterAppStart<ViewModels.PrevisaoGastoViewModel>();
+            RegisterAppStart<ViewModels.FirstViewModel>();
         }
     }
 }

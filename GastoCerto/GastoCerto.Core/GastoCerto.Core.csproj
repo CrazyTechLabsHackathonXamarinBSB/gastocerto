@@ -39,11 +39,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Modelo\Despesa.cs" />
     <Compile Include="Modelo\PrevisaoGasto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\DespesaRepositorio.cs" />
+    <Compile Include="Repositorio\PrevisaoGastoRepositorio.cs" />
     <Compile Include="ViewModels\FirstViewModel.cs" />
     <Compile Include="ViewModels\PrevisaoGastoViewModel.cs" />
   </ItemGroup>

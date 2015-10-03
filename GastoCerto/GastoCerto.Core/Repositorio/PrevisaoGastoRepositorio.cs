@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GastoCerto.Core.Repositorio
 {
-    class DespesaRepositorio
+    public class PrevisaoGastoRepositorio
     {
         private SQLiteAsyncConnection _connection;
 
@@ -16,16 +16,15 @@ namespace GastoCerto.Core.Repositorio
             var connectionFactory = Mvx.Resolve<IMvxSqliteConnectionFactory>();
             _connection = connectionFactory.GetAsyncConnection("GastoCertoBD");
 
-            await _connection.CreateTableAsync<Despesa>();
+            await _connection.CreateTableAsync<PrevisaoGastoRepositorio>();
         }
 
-        public async void Inserir(Despesa despesa)
+        public async void Inserir(PrevisaoGasto despesa)
         {
             await _connection.InsertAsync(despesa);
-           // _connection.Table<Despesa>()
         }
 
-        public async void Excluir(Despesa despesa)
+        public async void Excluir(PrevisaoGasto despesa)
         {
             await _connection.DeleteAsync(despesa);
         }
@@ -36,6 +35,5 @@ namespace GastoCerto.Core.Repositorio
             var p = _connection.Table<PrevisaoGasto>();
             return await p.ToListAsync();
         }
-
     }
 }
