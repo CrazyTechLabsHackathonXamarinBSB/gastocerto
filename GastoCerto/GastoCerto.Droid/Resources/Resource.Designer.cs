@@ -90,10 +90,7 @@ namespace GastoCerto.Droid
 			public const int Icon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
-			
-			// aapt resource value: 0x7f020002
-			public const int splash = 2130837506;
+			public const int splash = 2130837505;
 			
 			static Drawable()
 			{
@@ -117,6 +114,12 @@ namespace GastoCerto.Droid
 			// aapt resource value: 0x7f040002
 			public const int MyButton = 2130968578;
 			
+			// aapt resource value: 0x7f040004
+			public const int btnSalvar = 2130968580;
+			
+			// aapt resource value: 0x7f040003
+			public const int editText1 = 2130968579;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -137,7 +140,10 @@ namespace GastoCerto.Droid
 			public const int Main = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int SplashScreen = 2130903042;
+			public const int PrevisaoGasto = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int SplashScreen = 2130903043;
 			
 			static Layout()
 			{
@@ -170,9 +176,6 @@ namespace GastoCerto.Droid
 		
 		public partial class Style
 		{
-			
-			// aapt resource value: 0x7f050001
-			public const int Mono_Android_Theme_Splash = 2131034113;
 			
 			// aapt resource value: 0x7f050000
 			public const int Theme_Splash = 2131034112;

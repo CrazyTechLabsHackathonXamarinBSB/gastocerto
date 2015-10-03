@@ -11,7 +11,7 @@ namespace GastoCerto.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 				
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.PrevisaoGastoViewModel>();
         }
     }
 }
