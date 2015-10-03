@@ -26,19 +26,40 @@ namespace GastoCerto.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::GastoCerto.Droid.Resource.Attribute.MvxBind;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::GastoCerto.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::GastoCerto.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Attribute.MvxItemTemplate = global::GastoCerto.Droid.Resource.Attribute.MvxItemTemplate;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Attribute.MvxLang = global::GastoCerto.Droid.Resource.Attribute.MvxLang;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Attribute.MvxSource = global::GastoCerto.Droid.Resource.Attribute.MvxSource;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Attribute.MvxTemplate = global::GastoCerto.Droid.Resource.Attribute.MvxTemplate;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Id.MvvmCrossTagId = global::GastoCerto.Droid.Resource.Id.MvvmCrossTagId;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Id.MvxBindingTagUnique = global::GastoCerto.Droid.Resource.Id.MvxBindingTagUnique;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding = global::GastoCerto.Droid.Resource.Styleable.MvxBinding;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxBind = global::GastoCerto.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxLang = global::GastoCerto.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxControl = global::GastoCerto.Droid.Resource.Styleable.MvxControl;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::GastoCerto.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView = global::GastoCerto.Droid.Resource.Styleable.MvxExpandableListView;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::GastoCerto.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView = global::GastoCerto.Droid.Resource.Styleable.MvxImageView;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView_MvxSource = global::GastoCerto.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::GastoCerto.Droid.Resource.Styleable.MvxListView;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::GastoCerto.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::GastoCerto.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 		}
 		
 		public partial class Attribute
 		{
-			
-			// aapt resource value: 0x7f010005
-			public const int GroupItemTemplate = 2130771973;
 			
 			// aapt resource value: 0x7f010000
 			public const int MvxBind = 2130771968;
 			
 			// aapt resource value: 0x7f010004
 			public const int MvxDropDownItemTemplate = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public const int MvxGroupItemTemplate = 2130771973;
 			
 			// aapt resource value: 0x7f010003
 			public const int MvxItemTemplate = 2130771971;
@@ -69,7 +90,10 @@ namespace GastoCerto.Droid
 			public const int Icon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int splash = 2130837505;
+			public const int monoandroidsplash = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int splash = 2130837506;
 			
 			static Drawable()
 			{
@@ -85,10 +109,13 @@ namespace GastoCerto.Droid
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int MvxBindingTagUnique = 2130968576;
+			public const int MvvmCrossTagId = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int MyButton = 2130968577;
+			public const int MvxBindingTagUnique = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int MyButton = 2130968578;
 			
 			static Id()
 			{
@@ -144,6 +171,9 @@ namespace GastoCerto.Droid
 		public partial class Style
 		{
 			
+			// aapt resource value: 0x7f050001
+			public const int Mono_Android_Theme_Splash = 2131034113;
+			
 			// aapt resource value: 0x7f050000
 			public const int Theme_Splash = 2131034112;
 			
@@ -180,7 +210,7 @@ namespace GastoCerto.Droid
 					2130771973};
 			
 			// aapt resource value: 0
-			public const int MvxExpandableListView_GroupItemTemplate = 0;
+			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
 			public static int[] MvxImageView = new int[] {
 					2130771974};

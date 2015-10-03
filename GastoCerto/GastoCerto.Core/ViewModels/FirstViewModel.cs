@@ -2,8 +2,14 @@ using Cirrious.MvvmCross.ViewModels;
 
 namespace GastoCerto.Core.ViewModels
 {
-    public class FirstViewModel : MvxViewModel
+    public class FirstViewModel 
+		: MvxViewModel
     {
-        public string Hello { get { return "Hello MvvmCross"; } }
+		private string _hello = "Hello MvvmCross";
+        public string Hello
+		{ 
+			get { return _hello; }
+			set { _hello = value; RaisePropertyChanged(() => Hello); }
+		}
     }
 }
