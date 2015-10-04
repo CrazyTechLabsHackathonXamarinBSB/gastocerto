@@ -44,6 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\DespesaRepositorio.cs" />
     <Compile Include="Repositorio\PrevisaoGastoRepositorio.cs" />
+    <Compile Include="ViewModels\AdicionarDespesaViewModel.cs" />
     <Compile Include="ViewModels\FirstViewModel.cs" />
     <Compile Include="ViewModels\PrevisaoGastoViewModel.cs" />
     <Compile Include="ViewModels\SaldoDiaViewModel.cs" />
