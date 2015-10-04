@@ -11,11 +11,11 @@ namespace GastoCerto.Core.Modelo
 {
     public class PrevisaoGasto : MvxNotifyPropertyChanged
     {
+
         private DateTime _Data;
         private decimal _Saldo;
-
         public decimal Saldo { get { return _Saldo; } set { _Saldo = value; RaisePropertyChanged(() => Saldo); } }
-
         public DateTime Data { get { return _Data; } set { _Data = value; RaisePropertyChanged(() => Data); } }
+
     }
 }
