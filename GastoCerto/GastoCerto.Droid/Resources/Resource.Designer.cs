@@ -115,7 +115,10 @@ namespace GastoCerto.Droid
 			public const int Icon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int splash = 2130837505;
+			public const int monoandroidsplash = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int splash = 2130837506;
 			
 			static Drawable()
 			{
@@ -136,20 +139,23 @@ namespace GastoCerto.Droid
 			// aapt resource value: 0x7f050001
 			public const int MvxBindingTagUnique = 2131034113;
 			
-			// aapt resource value: 0x7f050005
-			public const int MyButton = 2131034117;
-			
-			// aapt resource value: 0x7f050007
-			public const int btnBuscar = 2131034119;
-			
 			// aapt resource value: 0x7f050006
-			public const int btnIncluir = 2131034118;
-			
-			// aapt resource value: 0x7f050004
-			public const int btnSalvar = 2131034116;
+			public const int MyButton = 2131034118;
 			
 			// aapt resource value: 0x7f050008
-			public const int btnVoltar = 2131034120;
+			public const int btnBuscar = 2131034120;
+			
+			// aapt resource value: 0x7f050004
+			public const int btnFoto = 2131034116;
+			
+			// aapt resource value: 0x7f050007
+			public const int btnIncluir = 2131034119;
+			
+			// aapt resource value: 0x7f050005
+			public const int btnSalvar = 2131034117;
+			
+			// aapt resource value: 0x7f050009
+			public const int btnVoltar = 2131034121;
 			
 			// aapt resource value: 0x7f050003
 			public const int editText1 = 2131034115;
@@ -222,6 +228,9 @@ namespace GastoCerto.Droid
 		
 		public partial class Style
 		{
+			
+			// aapt resource value: 0x7f060001
+			public const int Mono_Android_Theme_Splash = 2131099649;
 			
 			// aapt resource value: 0x7f060000
 			public const int Theme_Splash = 2131099648;
