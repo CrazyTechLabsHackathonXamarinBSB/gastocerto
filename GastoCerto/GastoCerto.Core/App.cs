@@ -13,13 +13,13 @@ namespace GastoCerto.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            var previsaogastorepositorio = new previsaogastorepositorio();
-            previsaogastorepositorio.init();
-            mvx.registersingleton(previsaogastorepositorio);
+            var previsaoGastoRepositorio = new PrevisaoGastoRepositorio();
+            previsaoGastoRepositorio.Init();
+            Mvx.RegisterSingleton(previsaoGastoRepositorio);
 
-            var despesarepositorio = new despesarepositorio();
-            despesarepositorio.init();
-            mvx.registersingleton(despesarepositorio);
+            var despesaRepositorio = new DespesaRepositorio();
+            despesaRepositorio.Init();
+            Mvx.RegisterSingleton(despesaRepositorio);
 
             RegisterAppStart<ViewModels.AdicionarDespesaViewModel>();
         }
