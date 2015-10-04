@@ -17,5 +17,11 @@
         android:text="Novo Gasto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        local:MvxBind="Click AdicionarGasto" />
+        local:MvxBind="Click AdicionarGasto"
+        android:layout_marginBottom="10dp" />
+    <Button
+        android:text="Pesquisar Despesas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click PesquisarDespesa" />
 </LinearLayout>
