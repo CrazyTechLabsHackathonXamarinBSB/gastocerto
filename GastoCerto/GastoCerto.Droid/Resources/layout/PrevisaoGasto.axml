@@ -15,7 +15,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        local:MvxBind="Value Gasto.Data" />
+        local:MvxBind="Value Gasto.Data"
+        android:layout_marginBottom="13.8dp" />
     <Button
         android:text="Salvar"
         android:layout_width="match_parent"

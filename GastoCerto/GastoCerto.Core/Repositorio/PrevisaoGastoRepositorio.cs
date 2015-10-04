@@ -21,7 +21,14 @@ namespace GastoCerto.Core.Repositorio
 
         public async void Inserir(PrevisaoGasto despesa)
         {
-            await _connection.InsertAsync(despesa);
+            try
+            {
+                await _connection.InsertAsync(despesa);
+            }
+            catch (System.Exception e)
+            {
+                throw;
+            }
         }
 
         public async void Excluir(PrevisaoGasto despesa)

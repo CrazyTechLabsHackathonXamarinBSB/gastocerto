@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace GastoCerto.Core.ViewModels
 {
@@ -18,10 +19,15 @@ namespace GastoCerto.Core.ViewModels
             Gasto = new PrevisaoGasto();
         }
 
-        public void Salvar()
+        public ICommand Salvar
         {
-            PrevisaoGastoRepositorio r = new PrevisaoGastoRepositorio();
-           r.Inserir(Gasto);
+            get {
+                return new MvxCommand(() =>
+                {
+                    PrevisaoGastoRepositorio r = new PrevisaoGastoRepositorio();
+                    r.Inserir(Gasto);
+                });
+            }
         }
 
         
