@@ -22,7 +22,7 @@ namespace GastoCerto.Core.ViewModels
             Despesa = new Despesa();
         }
 
-        public ICommand Salvar
+        public ICommand SalvarCommand
         {
             get
             {
@@ -34,24 +34,24 @@ namespace GastoCerto.Core.ViewModels
             }
         }
 
-        public ICommand PegarFotoCommand
-        {
-            get
-            {
-                return new MvxCommand(async () =>
-                {
-                    var picktureChooser = Mvx.Resolve<IMvxPictureChooserTask>();
-                    var stream = await picktureChooser.TakePictureAsync(100, 100);
-                    using (StreamReader sr = new StreamReader(stream))
-                    {
-                        Despesa.Foto = new char[stream.Length];
-                        await sr.ReadAsync(Despesa.Foto, 0, (int)stream.Length);
-                    }
-                });
+        //public ICommand PegarFotoCommand
+        //{
+        //    get
+        //    {
+        //        return new MvxCommand(async () =>
+        //        {
+        //            var picktureChooser = Mvx.Resolve<IMvxPictureChooserTask>();
+        //            var stream = await picktureChooser.TakePictureAsync(100, 100);
+        //            using (StreamReader sr = new StreamReader(stream))
+        //            {
+        //                Despesa.Foto = new char[stream.Length];
+        //                await sr.ReadAsync(Despesa.Foto, 0, (int)stream.Length);
+        //            }
+        //        });
 
-            }
+        //    }
 
-        }
+        //}
 
     }
 }
