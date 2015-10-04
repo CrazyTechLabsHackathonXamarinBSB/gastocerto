@@ -154,6 +154,9 @@ namespace GastoCerto.Droid
 			// aapt resource value: 0x7f030004
 			public const int SplashScreen = 2130903044;
 			
+			// aapt resource value: 0x7f030005
+			public const int VisualizarCupom = 2130903045;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
