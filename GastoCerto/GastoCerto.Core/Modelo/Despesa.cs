@@ -19,6 +19,9 @@ namespace GastoCerto.Core.Modelo
         public decimal Valor { get { return _Valor; } set { _Valor = value; RaisePropertyChanged(() => Valor); } }
         public string Foto { get { return _Foto; } set { _Foto = value; RaisePropertyChanged(() => Foto); } }
 
-
+        public byte[] PictureBytes
+        {
+            get { return Convert.FromBase64String(_Foto); }
+        }
     }
 }

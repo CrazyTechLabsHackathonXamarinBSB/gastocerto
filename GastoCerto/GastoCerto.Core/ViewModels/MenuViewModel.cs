@@ -1,4 +1,5 @@
-﻿using Cirrious.MvvmCross.ViewModels;
+﻿using Cirrious.CrossCore;
+using Cirrious.MvvmCross.ViewModels;
 using GastoCerto.Core.Modelo;
 using GastoCerto.Core.Repositorio;
 using System;
@@ -28,19 +29,9 @@ namespace GastoCerto.Core.ViewModels
             DefinirGastoMax = new MvxCommand(ExecuteDefinirGastoMax);
             AdicionarGasto = new MvxCommand(ExecuteAdicionarGasto);
             PesquisarDespesa = new MvxCommand(ExecutePesquisarDespesa);
-            Dinheiro = new Dinheiro();
-            AtualizarSaldo();   
-
+            Dinheiro = Mvx.GetSingleton<Dinheiro>();
+            Dinheiro.Atualizar();
         }
-
-
-        private  void AtualizarSaldo()
-        {
-         
-            Dinheiro.Saldo = "R$ 100,00";
-            Dinheiro.Gastos = "R$ 80,00";
-        }
-
 
         private void ExecuteDefinirGastoMax()
         {

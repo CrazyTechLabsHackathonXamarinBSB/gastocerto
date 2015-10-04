@@ -22,12 +22,16 @@ namespace GastoCerto.Core.Repositorio
         public async void Inserir(Despesa despesa)
         {
             await _connection.InsertAsync(despesa);
-           // _connection.Table<Despesa>()
+            // _connection.Table<Despesa>()
+            var dinheiro = Mvx.GetSingleton<Dinheiro>();
+            dinheiro.Atualizar();
         }
 
         public async void Excluir(Despesa despesa)
         {
             await _connection.DeleteAsync(despesa);
+            var dinheiro = Mvx.GetSingleton<Dinheiro>();
+            dinheiro.Atualizar();
         }
 
 

@@ -30,14 +30,17 @@ namespace GastoCerto.Core.Repositorio
             {
                 Debug.WriteLine(e.Message);
             }
+            var dinheiro = Mvx.GetSingleton<Dinheiro>();
+            dinheiro.Atualizar();
         }
 
         public async void Excluir(PrevisaoGasto despesa)
         {
             await _connection.DeleteAsync(despesa);
+            var dinheiro = Mvx.GetSingleton<Dinheiro>();
+            dinheiro.Atualizar();
         }
-
-
+        
         public async Task<List<PrevisaoGasto>> Consulta()
         {
             var p = _connection.Table<PrevisaoGasto>();

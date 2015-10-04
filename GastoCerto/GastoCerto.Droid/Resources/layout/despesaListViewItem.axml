@@ -8,12 +8,20 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
+        android:gravity="center"
         local:MvxBind="Text Justificativa"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
+        android:gravity="center"
         local:MvxBind="Text Valor"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        local:MvxBind="Bitmap PictureBytes,Converter=InMemoryImage" />
 </LinearLayout>

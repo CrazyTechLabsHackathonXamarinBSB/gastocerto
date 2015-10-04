@@ -31,6 +31,7 @@ namespace GastoCerto.Core.ViewModels
                 {
                     var r = Mvx.GetSingleton<DespesaRepositorio>();
                     r.Inserir(Despesa);
+                    Close(this);
                 });
             }
         }

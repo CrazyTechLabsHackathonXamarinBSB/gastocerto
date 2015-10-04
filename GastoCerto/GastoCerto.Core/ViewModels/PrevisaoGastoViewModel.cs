@@ -27,6 +27,7 @@ namespace GastoCerto.Core.ViewModels
                 {
                     var r = Mvx.GetSingleton<PrevisaoGastoRepositorio>();
                     r.Inserir(Gasto);
+                    Close(this);
                 });
             }
         }
