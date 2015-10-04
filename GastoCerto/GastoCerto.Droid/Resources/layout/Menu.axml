@@ -2,26 +2,57 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:actionBarNavMode="tabs"
-    android:layout_marginBottom="10dp">
-    <Button
-        android:text="Definir Gasto Max"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        local:MvxBind="Click DefinirGastoMax"
-        android:layout_marginBottom="10dp" />
-    <Button
-        android:text="Novo Gasto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        local:MvxBind="Click AdicionarGasto"
-        android:layout_marginBottom="10dp" />
-    <Button
-        android:text="Pesquisar Despesas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        local:MvxBind="Click PesquisarDespesa" />
+    android:layout_marginBottom="30dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Cota do dia:" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            local:MvxBind="Text Dinheiro.Saldo" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Gastos do dia:" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            local:MvxBind="Text Dinheiro.Gastos"
+            android:textColor="#ff0000" />
+        <Button
+            android:text="DEFINIR COTA DO DIA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            local:MvxBind="Click DefinirGastoMax"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp" />
+        <Button
+            android:text="REGISTRAR GASTO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            local:MvxBind="Click AdicionarGasto"
+            android:layout_marginBottom="10dp" />
+        <Button
+            android:text="PESQUISAR GASTOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            local:MvxBind="Click PesquisarDespesa" />
+    </LinearLayout>
 </LinearLayout>

@@ -118,13 +118,16 @@ namespace GastoCerto.Droid
 			public const int Icon = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int selector = 2130837506;
+			public const int monoandroidsplash = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int splash = 2130837507;
+			public const int selector = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int statistics13 = 2130837508;
+			public const int splash = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int statistics13 = 2130837509;
 			
 			static Drawable()
 			{
@@ -183,25 +186,31 @@ namespace GastoCerto.Droid
 			public const int AdicionarDespesa = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int FirstView = 2130903041;
+			public const int despesaListViewItem = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int FirstView = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Menu = 2130903043;
+			public const int Main = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int PrevisaoGasto = 2130903044;
+			public const int Menu = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int SaldoDia = 2130903045;
+			public const int PesquisarDespesa = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int SplashScreen = 2130903046;
+			public const int PrevisaoGasto = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int VisualizarCupom = 2130903047;
+			public const int SaldoDia = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int SplashScreen = 2130903048;
+			
+			// aapt resource value: 0x7f030009
+			public const int VisualizarCupom = 2130903049;
 			
 			static Layout()
 			{
@@ -235,11 +244,14 @@ namespace GastoCerto.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int CustomActionBarTheme = 2131099649;
-			
 			// aapt resource value: 0x7f060002
-			public const int MyActionBar = 2131099650;
+			public const int CustomActionBarTheme = 2131099650;
+			
+			// aapt resource value: 0x7f060001
+			public const int Mono_Android_Theme_Splash = 2131099649;
+			
+			// aapt resource value: 0x7f060003
+			public const int MyActionBar = 2131099651;
 			
 			// aapt resource value: 0x7f060000
 			public const int Theme_Splash = 2131099648;

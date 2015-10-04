@@ -7,17 +7,17 @@ namespace GastoCerto.Core.Modelo
     public class Despesa : MvxNotifyPropertyChanged
     {
         private long _Id;
-        private DateTime _Data;
+        private DateTime _Data = DateTime.Now;
         private string _Justificativa;
         private decimal _Valor;
-        //private char[] _Foto;
+        private string _Foto;
 
         [PrimaryKey, AutoIncrement]
         public long Id { get { return _Id; } set { _Id = value; RaisePropertyChanged(() => Id); } }
         public DateTime Data { get { return _Data; } set { _Data = value; RaisePropertyChanged(() => Data); } }
         public string Justificativa { get { return _Justificativa; } set { _Justificativa = value; RaisePropertyChanged(() => Justificativa); } }
         public decimal Valor { get { return _Valor; } set { _Valor = value; RaisePropertyChanged(() => Valor); } }
-      //  public char[] Foto { get { return _Foto; } set { _Foto = value; RaisePropertyChanged(() => Foto); } }
+        public string Foto { get { return _Foto; } set { _Foto = value; RaisePropertyChanged(() => Foto); } }
 
 
     }

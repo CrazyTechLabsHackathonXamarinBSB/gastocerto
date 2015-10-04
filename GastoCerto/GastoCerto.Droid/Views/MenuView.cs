@@ -13,7 +13,7 @@ using Cirrious.MvvmCross.Droid.Views;
 
 namespace GastoCerto.Droid.Views
 {
-    [Activity(Label = "Saldo do Dia")]
+    [Activity(Label = "Gasto Certo ")]
     public class MenuView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)

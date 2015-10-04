@@ -13,7 +13,8 @@
         android:layout_width="371.9dp"
         android:layout_height="wrap_content"
         android:id="@+id/editText1"
-        android:layout_marginRight="8.6dp" />
+        android:layout_marginRight="8.6dp"
+        android:hint="Data" />
     <Button
         android:text="Buscar"
         android:layout_width="match_parent"

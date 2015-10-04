@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GastoCerto.Core.Repositorio
 {
-    class DespesaRepositorio
+    public class DespesaRepositorio
     {
         private SQLiteAsyncConnection _connection;
 
@@ -31,10 +31,11 @@ namespace GastoCerto.Core.Repositorio
         }
 
 
-        public async Task<List<PrevisaoGasto>> Consulta()
+        public async Task<List<Despesa>> Consulta()
         {
-            var p = _connection.Table<PrevisaoGasto>();
-            return await p.ToListAsync();
+            var p = _connection.Table<Despesa>();
+            var resul = await p.ToListAsync();
+            return resul;
         }
 
     }

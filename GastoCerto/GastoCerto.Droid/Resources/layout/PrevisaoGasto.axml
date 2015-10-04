@@ -2,27 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:actionBarNavMode="tabs">
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="58.1dp"
-        android:id="@+id/editText1"
-        android:inputType="numberDecimal"
-        local:MvxBind="Text Gasto.Saldo" />
-    <MvxDatePicker
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:calendarViewShown="false"
-        local:MvxBind="Value Gasto.Data"
-        android:layout_marginBottom="13.8dp" />
-    <Button
-        android:text="Salvar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSalvar"
-        local:MvxBind="Click Salvar" />
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="58.1dp"
+            android:id="@+id/editText1"
+            android:inputType="numberDecimal"
+            android:hint="Valor"
+            local:MvxBind="Text Gasto.Saldo" />
+        <MvxDatePicker
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:calendarViewShown="false"
+            local:MvxBind="Value Gasto.Data"
+            android:hint="Data"
+            android:layout_marginBottom="13.8dp" />
+        <Button
+            android:text="Salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSalvar"
+            local:MvxBind="Click Salvar" />
+    </LinearLayout>
 </LinearLayout>

@@ -2,34 +2,50 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:actionBarNavMode="tabs">
-    <MvxDatePicker
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        local:MvxBind="Value Despesa.Data"
-        android:layout_marginBottom="13.8dp" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="58.1dp"
-        android:id="@+id/editText2"
-        android:hint="Justificativa"
-        local:MvxBind="Text Despesa.Justificativa" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="58.1dp"
-        android:id="@+id/editText1"
-        android:inputType="numberDecimal"
-        android:hint="Valor"
-        local:MvxBind="Text Despesa.Valor"
-        android:layout_marginBottom="10dp" />
-    <Button
-        android:text="Salvar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSalvar"
-        local:MvxBind="Click Salvar" />
+        android:layout_height="wrap_content">
+        <MvxDatePicker
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            local:MvxBind="Value Despesa.Data"
+            android:layout_marginBottom="13.8dp"
+            android:calendarViewShown="false" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="58.1dp"
+            android:id="@+id/editText2"
+            android:hint="Justificativa"
+            local:MvxBind="Text Despesa.Justificativa" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="58.1dp"
+            android:id="@+id/editText1"
+            android:inputType="numberDecimal"
+            android:hint="Valor"
+            local:MvxBind="Text Despesa.Valor"
+            android:layout_marginBottom="10dp" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            local:MvxBind="Bitmap PictureBytes,Converter=InMemoryImage" />
+        <Button
+            android:text="FOTO DO COMPROVANTE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            local:MvxBind="Click PegarFotoCommand" />
+        <Button
+            android:text="Salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSalvar"
+            local:MvxBind="Click SalvarCommand" />
+    </LinearLayout>
 </LinearLayout>

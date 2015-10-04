@@ -13,15 +13,15 @@ using Cirrious.MvvmCross.Droid.Views;
 
 namespace GastoCerto.Droid.Views
 {
-
-    [Activity(Label = "LANÇAMENTO DE DESPESAS")]
-    public class AdicionarDespesaView : MvxActivity
+    [Activity(Label = "Pesquisa de Gastos")]
+    public class PesquisarDespesaView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.AdicionarDespesa);
-        }
+            SetContentView(Resource.Layout.PesquisarDespesa);
 
+
+        }
     }
 }

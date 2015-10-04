@@ -117,6 +117,7 @@
     <Compile Include="Views\AdicionarDespesaView.cs" />
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\MenuView.cs" />
+    <Compile Include="Views\PesquisarDespesaView.cs" />
     <Compile Include="Views\PrevisaoGastoView.cs" />
     <Compile Include="Views\SaldoDiaView.cs" />
     <Compile Include="Views\VisualizarCupomView.cs" />
@@ -138,6 +139,12 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Menu.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PesquisarDespesa.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\despesaListViewItem.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -5,6 +5,7 @@ using GastoCerto.Core.Modelo;
 using GastoCerto.Core.Repositorio;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -34,24 +35,37 @@ namespace GastoCerto.Core.ViewModels
             }
         }
 
-        //public ICommand PegarFotoCommand
-        //{
-        //    get
-        //    {
-        //        return new MvxCommand(async () =>
-        //        {
-        //            var picktureChooser = Mvx.Resolve<IMvxPictureChooserTask>();
-        //            var stream = await picktureChooser.TakePictureAsync(100, 100);
-        //            using (StreamReader sr = new StreamReader(stream))
-        //            {
-        //                Despesa.Foto = new char[stream.Length];
-        //                await sr.ReadAsync(Despesa.Foto, 0, (int)stream.Length);
-        //            }
-        //        });
+        public ICommand PegarFotoCommand
+        {
+            get
+            {
+                return new MvxCommand(async () =>
+                    {
+                        try
+                        {
+                            var picktureChooser = Mvx.Resolve<IMvxPictureChooserTask>();
 
-        //    }
+                            var stream = await picktureChooser.TakePictureAsync(480, 80);
 
-        //}
+                            var memoryStream = new MemoryStream();
+                            await stream.CopyToAsync(memoryStream);
+                            PictureBytes = memoryStream.ToArray();
 
+                            Despesa.Foto = Convert.ToBase64String(PictureBytes);
+
+                            Debug.WriteLine(Despesa.Foto);
+                        }
+                        catch (Exception ex)
+                        {
+                            Debug.WriteLine(ex);
+                            throw;
+                        }
+                    });
+            }
+
+        }
+
+        private byte[] _pictureBytes;
+        public byte[] PictureBytes { get { return _pictureBytes; } private set { _pictureBytes = value; RaisePropertyChanged(() => PictureBytes); } }
     }
 }

@@ -13,7 +13,7 @@ using Cirrious.MvvmCross.Droid.Views;
 
 namespace GastoCerto.Droid.Views
 {
-    [Activity(Label = "Previsão de Gastos Diário")]
+    [Activity(Label = "Qual a sua cota diária?")]
     public class PrevisaoGastoView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
