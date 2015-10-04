@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
-
+ 
 namespace GastoCerto.Core.Modelo
 {
     public class PrevisaoGasto : MvxNotifyPropertyChanged
