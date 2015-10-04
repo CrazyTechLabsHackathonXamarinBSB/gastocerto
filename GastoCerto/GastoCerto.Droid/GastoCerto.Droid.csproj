@@ -108,6 +108,7 @@
     <Compile Include="Views\AdicionarDespesaView.cs" />
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\PrevisaoGastoView.cs" />
+    <Compile Include="Views\PrincipalView.cs" />
     <Compile Include="Views\SaldoDiaView.cs" />
     <Compile Include="Views\VisualizarCupomView.cs" />
   </ItemGroup>
@@ -125,6 +126,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AdicionarDespesa.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Principal.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -149,6 +153,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\SplashStyle.xml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable\add198.png" />
+    <AndroidResource Include="Resources\drawable\statistics13.png" />
+    <AndroidResource Include="Resources\drawable\selector.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\themes.xml" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
