@@ -46,6 +46,7 @@
     <Compile Include="Repositorio\PrevisaoGastoRepositorio.cs" />
     <Compile Include="ViewModels\FirstViewModel.cs" />
     <Compile Include="ViewModels\PrevisaoGastoViewModel.cs" />
+    <Compile Include="ViewModels\SaldoDiaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
