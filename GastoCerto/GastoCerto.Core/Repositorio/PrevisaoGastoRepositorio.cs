@@ -3,6 +3,7 @@ using GastoCerto.Core.Modelo;
 using MvvmCross.Plugins.Sqlite;
 using SQLite.Net.Async;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace GastoCerto.Core.Repositorio
@@ -16,7 +17,7 @@ namespace GastoCerto.Core.Repositorio
             var connectionFactory = Mvx.Resolve<IMvxSqliteConnectionFactory>();
             _connection = connectionFactory.GetAsyncConnection("GastoCertoBD");
 
-            await _connection.CreateTableAsync<PrevisaoGastoRepositorio>();
+            await _connection.CreateTableAsync<PrevisaoGasto>();
         }
 
         public async void Inserir(PrevisaoGasto despesa)
