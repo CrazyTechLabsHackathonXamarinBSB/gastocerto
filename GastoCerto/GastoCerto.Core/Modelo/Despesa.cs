@@ -14,7 +14,7 @@ namespace GastoCerto.Core.Modelo
         [PrimaryKey, AutoIncrement]
         public long Id { get { return _Id; } set { _Id = value; RaisePropertyChanged(() => Id); } }
         public DateTime Data { get { return _Data; } set { _Data = value; RaisePropertyChanged(() => Data); } }
-        public string Justificativa { get { return _Justificativa; } set { _Justificativa = value; RaisePropertyChanged(() => justificativa); } }
+        public string Justificativa { get { return _Justificativa; } set { _Justificativa = value; RaisePropertyChanged(() => Justificativa); } }
         public decimal Valor { get { return _Valor; } set { _Valor = value; RaisePropertyChanged(() => Valor); } }
 
     }

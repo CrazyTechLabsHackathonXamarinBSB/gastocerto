@@ -10,16 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="58.1dp"
         android:id="@+id/editText1"
-        local:MvxBind="Value Valor" />
+        local:MvxBind="Value Gasto.Valor" />
     <MvxDatePicker
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        local:MvxBind="Value Data" />
+        local:MvxBind="Value Gasto.Data" />
     <Button
         android:text="Salvar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnSalvar"
-        local:MvxBind="Click SalvarPrecisao" />
+        local:MvxBind="Click Salvar" />
 </LinearLayout>
