@@ -16,13 +16,22 @@
         android:layout_width="match_parent"
         android:layout_height="58.1dp"
         android:id="@+id/editText2"
+        android:hint="Justificativa"
         local:MvxBind="Text Despesa.Justificativa" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="58.1dp"
         android:id="@+id/editText1"
         android:inputType="numberDecimal"
-        local:MvxBind="Text Despesa.Valor" />
+        android:hint="Valor"
+        local:MvxBind="Text Despesa.Valor"
+        android:layout_marginBottom="10dp" />
+    <Button
+        android:text="Salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFoto"
+        local:MvxBind="Click PegarFotoCommand" />
     <Button
         android:text="Salvar"
         android:layout_width="match_parent"
