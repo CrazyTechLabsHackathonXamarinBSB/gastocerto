@@ -1,4 +1,5 @@
-﻿using Cirrious.MvvmCross.ViewModels;
+﻿using Cirrious.CrossCore;
+using Cirrious.MvvmCross.ViewModels;
 using GastoCerto.Core.Modelo;
 using GastoCerto.Core.Repositorio;
 using System;
@@ -24,7 +25,7 @@ namespace GastoCerto.Core.ViewModels
             get {
                 return new MvxCommand(() =>
                 {
-                    PrevisaoGastoRepositorio r = new PrevisaoGastoRepositorio();
+                    var r = Mvx.GetSingleton<PrevisaoGastoRepositorio>();
                     r.Inserir(Gasto);
                 });
             }
