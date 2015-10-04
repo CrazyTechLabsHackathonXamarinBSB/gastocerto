@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="58.1dp"
         android:id="@+id/editText1"
-        local:MvxBind="Value Gasto.Valor" />
+        android:inputType="numberDecimal"
+        local:MvxBind="Text Gasto.Saldo" />
     <MvxDatePicker
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
