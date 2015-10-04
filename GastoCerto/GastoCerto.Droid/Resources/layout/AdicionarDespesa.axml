@@ -27,12 +27,6 @@
         local:MvxBind="Text Despesa.Valor"
         android:layout_marginBottom="10dp" />
     <Button
-        android:text="Comprovante"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnFoto"
-        local:MvxBind="Click PegarFotoCommand" />
-    <Button
         android:text="Salvar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

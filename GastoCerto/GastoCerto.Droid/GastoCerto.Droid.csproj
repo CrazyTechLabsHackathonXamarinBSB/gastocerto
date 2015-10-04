@@ -116,8 +116,8 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\AdicionarDespesaView.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\MenuView.cs" />
     <Compile Include="Views\PrevisaoGastoView.cs" />
-    <Compile Include="Views\PrincipalView.cs" />
     <Compile Include="Views\SaldoDiaView.cs" />
     <Compile Include="Views\VisualizarCupomView.cs" />
   </ItemGroup>
@@ -137,7 +137,7 @@
     <AndroidResource Include="Resources\layout\AdicionarDespesa.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Principal.axml">
+    <AndroidResource Include="Resources\layout\Menu.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

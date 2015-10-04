@@ -13,16 +13,12 @@ using Cirrious.MvvmCross.Droid.Views;
 
 namespace GastoCerto.Droid.Views
 {
-    [Activity(Label = "Bem-Vindo!", Theme = "@style/CustomActionBarTheme")]
-    public class PrincipalView : MvxActivity
+    public class MenuView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            ActionBar.SetCustomView(Resource.Layout.Principal);
-            ActionBar.SetDisplayShowCustomEnabled(true);
-            SetContentView(Resource.Layout.Principal);
+            SetContentView(Resource.Layout.Menu);
         }
     }
 }

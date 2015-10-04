@@ -46,8 +46,8 @@
     <Compile Include="Repositorio\PrevisaoGastoRepositorio.cs" />
     <Compile Include="ViewModels\AdicionarDespesaViewModel.cs" />
     <Compile Include="ViewModels\FirstViewModel.cs" />
+    <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="ViewModels\PrevisaoGastoViewModel.cs" />
-    <Compile Include="ViewModels\PrincipalViewModel.cs" />
     <Compile Include="ViewModels\SaldoDiaViewModel.cs" />
     <Compile Include="ViewModels\VisualizarCupomViewModel.cs" />
   </ItemGroup>
