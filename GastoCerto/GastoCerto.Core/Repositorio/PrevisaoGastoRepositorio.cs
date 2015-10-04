@@ -28,7 +28,7 @@ namespace GastoCerto.Core.Repositorio
             }
             catch (System.Exception e)
             {
-                throw;
+                Debug.WriteLine(e.Message);
             }
         }
 
