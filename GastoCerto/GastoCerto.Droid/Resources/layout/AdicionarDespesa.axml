@@ -16,12 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="58.1dp"
         android:id="@+id/editText2"
+        android:hint="Justificativa"
         local:MvxBind="Text Despesa.Justificativa" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="58.1dp"
         android:id="@+id/editText1"
         android:inputType="numberDecimal"
+        android:hint="Valor"
         local:MvxBind="Text Despesa.Valor" />
     <Button
         android:text="Salvar"
