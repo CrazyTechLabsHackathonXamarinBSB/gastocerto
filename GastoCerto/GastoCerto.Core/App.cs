@@ -21,7 +21,7 @@ namespace GastoCerto.Core
             despesaRepositorio.Init();
             Mvx.RegisterSingleton(despesaRepositorio);
 
-            RegisterAppStart<ViewModels.AdicionarDespesaViewModel>();
+            RegisterAppStart<ViewModels.PrincipalViewModel>();
         }
     }
 }
